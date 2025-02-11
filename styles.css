@@ -1,0 +1,421 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    position: fixed; /* Fix navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #666;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Nested Dropdown */
+.nested-dropdown {
+    position: relative;
+}
+
+.nested-dropdown .sub-dropdown {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #555;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nested-dropdown:hover .sub-dropdown {
+    display: block;
+}
+
+/* Prevent content from being hidden under the fixed navbar */
+body {
+    padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Home Section */
+.home-section, .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.home-text, .about-text {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.home-text h1, .about-text h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.home-text p, .about-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Home & About Images */
+.home-image, .about-image {
+    flex: 1;
+    text-align: right;
+}
+
+.home-image img, .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.info-box {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+}
+
+.info-box h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+.info-box p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.offers-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.offers-container {
+    display: flex;
+    flex-direction: row; /* Aligns boxes in a horizontal row */
+    justify-content: center; /* Centers the boxes horizontally */
+    gap: 20px; /* Adds spacing between the boxes */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.offer-box {
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Set a fixed width for consistency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.offer-box h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.offer-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+.offer-box:hover {
+    transform: scale(1.05);
+}
+
+.hikvision-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+.hikvision-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hikvision-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hikvision-text p {
+    font-size: 18px;
+    color: #555;
+}
+
+.hikvision-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hikvision-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.honeywell-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+    flex-direction: row; /* Ensures image stays on the left, text on the right */
+}
+
+.honeywell-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.honeywell-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.honeywell-text p {
+    font-size: 18px;
+    color: #555;
+}
+
+.honeywell-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.honeywell-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popular-products {
+    text-align: center;
+    padding: 50px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.product-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-category {
+    font-size: 16px;
+    color: orange;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.other-products {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 20px; /* Adds space between content and footer */
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust icon size */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    max-width: 900px;
+    margin: auto;
+}
+
+.product-image {
+    width: 40%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+
+
