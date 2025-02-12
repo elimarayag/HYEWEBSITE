@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <nav class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="logo.png" alt="Logo">
+                    <img src="../assets/hye logo.png" alt="Logo">
                 </a>
             </div>
             <ul class="nav-links">
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <a href="#">HIKVISION ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/hikvision/turbo-hd-tvi-720p.html">TURBO HD TVI 720P</a>
-                                <a href="/hikvison/turbo-hd-tvi-1080p.html">TURBO HD TVI 1080P</a>
+                                <a href="/hikvision/turbo-hd-tvi-1080p.html">TURBO HD TVI 1080P</a>
                                 <a href="/hikvision/colorvu.html">COLORVU</a>
                                 <a href="/hikvision/hd1080p-audio-series.html">HD1080P AUDIO SERIES</a>
                                 <a href="/hikvision/iot-pir-series.html">IOT/PIR SERIES</a>
