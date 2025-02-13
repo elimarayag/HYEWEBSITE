@@ -9,7 +9,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: black;
     padding: 15px 20px;
     position: fixed; /* Fix navbar at the top */
     top: 0;
@@ -36,7 +36,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 12px 20px;
     display: block;
     font-size: 12px; 
@@ -111,7 +111,7 @@ body {
     padding-right: 30px;
 }
 
-.home-text h1, .about-text h2 {
+.home-text h1, .about-text h1 {
     font-size: 50px;
     color: #333;
     margin-bottom: 20px;
@@ -127,7 +127,7 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 20px;
-    background-color: #007BFF;
+    background-color: #333;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -135,7 +135,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #5b5b5c;
 }
 
 /* Home & About Images */
@@ -148,6 +148,18 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.about-text {
+    text-align: center; /* Centers all text in .about-text */
+}
+
+.about-text h1 {
+    text-align: center; /* Centers only the About Us heading */
+    font-size: 36px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    color: #333; /* Keep brand color */
+    margin-bottom: 20px; /* Add spacing below */
 }
 
 /* Info Section */
@@ -168,16 +180,29 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack h2 and p vertically */
+    justify-content: center; /* Center content inside */
+    height: 100%; /* Ensures full height usage */
 }
 
 .info-box:hover {
     transform: scale(1.05);
 }
 
+.info-box h2, .info-box p {
+    text-align: center; /* Ensure text is centered */
+}
 .info-box h2 {
     color: #333;
     font-size: 22px;
+    text-align: center; /* Ensure text is centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures full height alignment */
 }
+
 
 .info-box p {
     color: #555;
@@ -187,6 +212,12 @@ body {
 .offers-section {
     text-align: center;
     padding: 50px;
+}
+.offers-section h1 {
+    font-size: 42px; /* Increase font size */
+    font-weight: bold; /* Make it bolder */
+    margin-bottom: 15px; /* Add spacing below */
+    color: #333; /* Ensure good contrast */
 }
 
 .offers-container {
@@ -307,10 +338,12 @@ body {
     text-align: center;
 }
 
-.popular-products h2 {
-    font-size: 24px;
-    color: #0056b3;
-    margin-bottom: 20px;
+
+.popular-products h1 {
+    font-size: 36px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    color: #333; /* Maintain brand color */
+    margin-bottom: 20px; /* Add spacing below */
 }
 
 .product-container {
@@ -350,7 +383,7 @@ body {
 .read-more {
     display: inline-block;
     padding: 8px 12px;
-    background: #0056b3;
+    background: #333;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -361,9 +394,15 @@ body {
     padding: 50px;
 }
 
+.other-products h1 {
+    font-size: 36px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    color: #333; /* Keep brand color */
+    margin-bottom: 20px; /* Add spacing below */
+}
 /* Footer Styles */
 .footer {
-    background-color: #333;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -489,39 +528,86 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.blog-section {
+.blog-container {
     display: flex;
-    justify-content: flex-start; /* Aligns content to the left */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     padding: 20px;
-}
-
-.blog-content {
-    max-width: 600px;
-}
-
-.blog-content h2 a {
-    text-decoration: none;
-    color: #0073e6;
-    font-size: 24px;
-}
-
-.blog-content h2 a:hover {
-    text-decoration: underline;
-}
-
-.blog-author {
-    font-size: 14px;
-    color: gray;
-    margin-bottom: 10px;
 }
 
 .blog-container {
-    max-width: 800px;
-    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.blog-box {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay for text */
+.blog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;  /* Ensures text does not touch the edges */
+    box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+.blog-overlay p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #f1f1f1;
+    word-wrap: break-word;  /* Ensures words wrap properly */
+    overflow-wrap: break-word;
+    width: 90%;  /* Prevents text from touching the edges */
+}
+
+
+/* Style the text */
+.blog-overlay h2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
 
 h1, h2 {
     color: #333;
@@ -537,7 +623,20 @@ h1, h2 {
     padding: 20px;
     background: #f1f1f1;
     border-radius: 5px;
+    width: 80%; /* Adjust width to make it wider */
+    max-width: 600px; /* Limit max width for large screens */
+    margin-left: auto;
+    margin-right: auto; /* Center the form */
 }
+
+form textarea, form input {
+    width: 95%; /* Ensures inputs take full width of the form */
+    padding: 12px; /* Slightly increase padding for better spacing */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 
 form label {
     display: block;
@@ -545,13 +644,6 @@ form label {
     font-weight: bold;
 }
 
-form textarea, form input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
 button {
     margin-top: 15px;
@@ -567,6 +659,9 @@ button:hover {
     background-color: #555;
 }
 
+.contact-container h1 {
+    text-align: center;
+}
 .contact-container {
     max-width: 800px;
     margin: 30px auto;
@@ -610,11 +705,23 @@ p {
 
 .contact-form input, 
 .contact-form textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.map-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.map-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
 }
 
 button {
@@ -741,4 +848,18 @@ img {
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button a {
+    display: inline-block;
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text for contrast */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+}
+
+.back-button a:hover {
+    background-color: #555; /* Slightly lighter gray on hover */
 }

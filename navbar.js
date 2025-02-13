@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="#">PRODUCTS ▼</a>
                     <div class="dropdown-content">
                         <div class="nested-dropdown">
-                            <a href="#">HIKVISION ▶</a>
+                            <a href="hikvision.html">HIKVISION ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/hikvision/turbo-hd-tvi-720p.html">TURBO HD TVI 720P</a>
                                 <a href="/hikvision/turbo-hd-tvi-1080p.html">TURBO HD TVI 1080P</a>
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                         <!-- AVTECH -->
                         <div class="nested-dropdown">
-                            <a href="#">AVTECH ▶</a>
+                            <a href="avtech.html">AVTECH ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/avtech/tvi-dome-camera.html">TVI DOME CAMERA</a>
                                 <a href="/avtech/tvi-bullet-camera.html">TVI BULLET CAMERA</a>
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                         <!-- DAHUA -->
                         <div class="nested-dropdown">
-                            <a href="#">DAHUA ▶</a>
+                            <a href="dahua.html">DAHUA ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/dahua/dome-camera.html">DOME CAMERA</a>
                                 <a href="/dahua/bullet-camera.html">BULLET CAMERA</a>
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                         <!-- RUIJIE | NETWORKS -->
                         <div class="nested-dropdown">
-                            <a href="#">RUIJIE | NETWORKS ▶</a>
+                            <a href="ruijie.html">RUIJIE | NETWORKS ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/ruijie/reyee.html">REYEE</a>
                                 <a href="/ruijie/ruijie.html">RUIJIE</a>
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <a href="/ruijie/ruijie-management.html">RUIJIE MANAGEMENT</a>
                                 <a href="/ruijie/ruijie-accessories.html">RUIJIE ACCESSORIES</a>
                                 <div class="nested-dropdown">
-                            <a href="#">ZKTECO ▶</a>
+                            <a href="zkteco.html">ZKTECO ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/ruijie/biometrics-access-control.html">BIOMETRICS & ACCESS CONTROL</a>
                             </div>
@@ -78,21 +78,21 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                         <!-- ROSSLARE -->
                         <div class="nested-dropdown">
-                            <a href="#">ROSSLARE ▶</a>
+                            <a href="rosslare.html">ROSSLARE ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/rosslare/access-control.html">ACCESS CONTROL SYSTEM</a>
                             </div>
                         </div>
                         <!-- ITC AUDIO -->
                         <div class="nested-dropdown">
-                            <a href="#">ITC AUDIO ▶</a>
+                            <a href="itc-audio.html">ITC AUDIO ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/itcaudio/itc-commercial.html">ITC COMMERCIAL AUDIO</a>
                             </div>
                         </div>
                         <!-- HONEYWELL -->
                         <div class="nested-dropdown">
-                            <a href="#">HONEYWELL ▶</a>
+                            <a href="honeywell.html">HONEYWELL ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/honeywell/evaclite.html">EVACLITE</a>
                                 <a href="/honeywell/compact.html">COMPACT PA</a>
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                         <!-- iHORN -->
                         <div class="nested-dropdown">
-                            <a href="#">iHORN ▶</a>
+                            <a href="ihorn.html">iHORN ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/ihorn/standalone.html">STANDALONE SMOKE DETECTOR</a>
                                 <a href="/ihorn/wiredsmoke.html">WIRED SMOKE | HEAT DETECTOR</a>
@@ -117,28 +117,28 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                         <!-- UBIQUITI -->
                         <div class="nested-dropdown">
-                            <a href="#">UBIQUITI ▶</a>
+                            <a href="ubiquiti.html">UBIQUITI ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/ubiquiti/wireless.html">Wireless Ubiquiti</a>
                             </div>
                         </div>
                         <!-- EZVIZ NETWORK -->
                         <div class="nested-dropdown">
-                            <a href="#">EZVIZ NETWORK ▶</a>
+                            <a href="ezviz-network.html">EZVIZ NETWORK ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/ezviz/ezviz.html">EZVIZ</a>
                             </div>
                         </div>
                         <!-- GUARD PATROL -->
                         <div class="nested-dropdown">
-                            <a href="#">GUARD PATROL ▶</a>
+                            <a href="guard-patrol.html">GUARD PATROL ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/guardpatrol/jwm.html">JWM High Tech</a>
                             </div>
                         </div>
                         <!-- HARD DRIVE -->
                         <div class="nested-dropdown">
-                            <a href="#">HARD DRIVE ▶</a>
+                            <a href="hard-drive.html">HARD DRIVE ▶</a>
                             <div class="sub-dropdown">
                                 <a href="/harddrive/wd.html">WD WESTERN DIGITAL</a>
                             </div>
