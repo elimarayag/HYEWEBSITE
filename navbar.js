@@ -169,6 +169,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li><a href="contact.html">CONTACT US</a></li>
             </ul>
         </nav>
+
+        
     `;
     document.getElementById("navbar-container").innerHTML = navbarHTML;
 });

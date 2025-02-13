@@ -405,30 +405,89 @@ body {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
     width: 100%;
-    margin-top: 20px; /* Adds space between content and footer */
+    margin-top: 20px;
 }
 
-.footer-content p {
-    margin: 5px 0;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-left h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .social-icons {
-    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 .social-icons a {
-    color: white; 
-    font-size: 20px; /* Adjust icon size if needed */
+    color: white;
+    font-size: 20px;
     transition: transform 0.3s, color 0.3s;
 }
 
 .social-icons a:hover {
     transform: scale(1.1);
-    color: #ccc; /* Slight color change on hover */
+    color: #ccc;
 }
 
+/* Subscribe Form */
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.subscribe-form input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.subscribe-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: #333;
+}
+
+.footer-right h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-right p {
+    margin: 5px 0;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
 
 .product-container {
     display: flex;
