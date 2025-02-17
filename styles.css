@@ -916,6 +916,8 @@ img {
 }
 
 .back-button a {
+    margin-top: 50px;
+    margin-left: 30px;
     display: inline-block;
     background-color: #333; /* Dark gray background */
     color: white; /* White text for contrast */
