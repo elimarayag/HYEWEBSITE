@@ -15,7 +15,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensures it stays above other elements */
+    z-index: 1050; /* Ensures it stays above product navbar */
 }
 
 .logo img {
@@ -39,7 +39,7 @@ body {
     color: white;
     padding: 12px 20px;
     display: block;
-    font-size: 12px; 
+    font-size: 12px;
 }
 
 .nav-links a:hover {
@@ -55,7 +55,7 @@ body {
     background-color: #444;
     min-width: 220px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 10;
+    z-index: 1100; /* Ensures dropdowns appear above everything */
 }
 
 .dropdown-content a {
@@ -85,6 +85,7 @@ body {
     background-color: #555;
     min-width: 200px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1100; /* Keeps nested dropdowns visible */
 }
 
 .nested-dropdown:hover .sub-dropdown {
@@ -513,14 +514,14 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 12px;
-    background-color: #007bff;
+    background-color: #333;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .back-link:hover {
-    background-color: #0056b3;
+    background-color: #555;
 }
 
 .about-container {
@@ -672,6 +673,15 @@ h1, h2 {
     color: #777;
     font-size: 14px;
 }
+
+.blog-text {
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+}
+
 
 .reply-form {
     margin-top: 30px;
@@ -917,4 +927,61 @@ img {
 
 .back-button a:hover {
     background-color: #555; /* Slightly lighter gray on hover */
+}
+
+.hikvision-logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hikvision-logo img {
+    max-width: 200px;
+}
+
+/* Product Navbar */
+.product-navbar {
+    position: sticky;
+    top: 70px; /* Adjust so it stays below the main navbar */
+    background-color: black;
+    z-index: 1000; /* Lower than main navbar and dropdowns */
+    padding: 35px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures text does not get cut off */
+}
+
+.product-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-navbar li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.product-navbar a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: color 0.3s ease-in-out;
+}
+
+.product-navbar a:hover {
+    color: #555;
+}
+
+.hikvision-products-heading {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 10px; /* Adjust spacing as needed */
+    color: #333; /* Adjust color if necessary */
 }
