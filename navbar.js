@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <!-- News & Events Dropdown -->
                 <li class="dropdown">
-                    <a href="#">NEWS & EVENTS ▼</a>
+                    <a href="news-events.html">NEWS & EVENTS ▼</a>
                     <div class="dropdown-content">
                         <a href="honeywell-training.html">Honeywell Mid Segment FDAS & PAVA Basic Training & Product Updates</a>
                         <a href="ezviz-intro.html">EZVIZ - Product Introduction</a>
