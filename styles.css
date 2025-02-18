@@ -550,20 +550,73 @@ body {
 
 /* Review Section Styling */
 .product-review {
-    max-width: 600px;
+    max-width: 700px;
     margin: 50px auto;
     text-align: center;
 }
 
-.product-review h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+/* Review Section Styling */
+.product-review {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
 }
 
+/* Customer Reviews Styling */
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;  /* Centers all reviews */
+    justify-content: center;  /* Centers vertically if needed */
+}
+
+/* Individual Review */
+.review {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;  /* Ensures reviews are not too wide */
+    max-width: 600px;  /* Optional: limits the max width of each review */
+    margin: 0 auto;  /* Centers individual review items */
+}
+
+/* Reviewer's Photo */
+.reviewer-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Review Text */
+.review-text {
+    text-align: left;
+    width: 100%;  /* Ensures the text takes full width */
+}
+
+.review-text h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.rating {
+    font-size: 16px;
+    color: gold;
+}
+
+/* Review Form Styling */
 #review-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 0 auto;  /* Centers the form */
+    width: 90%;
+    max-width: 600px;  /* Optional: limits the max width of the form */
 }
 
 #review-form label {
@@ -592,6 +645,50 @@ body {
 #review-form button:hover {
     background-color: #555;
 }
+
+/* Hidden Reviews Section */
+.hidden-reviews {
+    display: none;
+    width: 100%;
+    text-align: center;  /* Ensures the hidden reviews section is centered */
+}
+
+/* See All Reviews Button */
+/* Center the See All Reviews button */
+#see-all-reviews {
+    display: block;
+    margin: 20px auto; /* This will center the button horizontally */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+#see-all-reviews:hover {
+    background-color: #555;
+}
+
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;  /* Centers all reviews */
+    justify-content: center;  /* Centers vertically if needed */
+    text-align: center;  /* Center text inside the container */
+}
+
+.see-all-reviews-container {
+    display: flex;
+    justify-content: center; /* Centers the button */
+    margin-top: 20px;
+}
+
+
 
 
 .about-container {
