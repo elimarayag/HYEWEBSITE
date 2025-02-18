@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <!-- Products Dropdown -->
                 <li class="dropdown">
-                    <a href="#">PRODUCTS ▼</a>
+                    <a href="products.html">PRODUCTS ▼</a>
                     <div class="dropdown-content">
                         <div class="nested-dropdown">
                             <a href="hikvision.html">HIKVISION ▶</a>

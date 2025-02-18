@@ -182,7 +182,7 @@
 
     <section class="product-details">
         <div class="product-container">
-            <img src="../assets/21.jpg" alt="Hikvision Kit" class="product-image">
+            <img src="../assets/13.jpg" alt="Hikvision Kit" class="product-image">
             <div class="product-info">
                 
                     <h1 class="product-header">DS-2CE16C0T-IRP</h1>
@@ -202,13 +202,13 @@
         </div>
     </section>
 
-    <!-- Product Review Section -->
     <section class="product-review">
+        <!-- Submit Review Form (Now First) -->
         <h2>Submit Your Review</h2>
         <form id="review-form">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
-
+    
             <label for="rating">Your Rating:</label>
             <select id="rating" name="rating" required>
                 <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
@@ -217,13 +217,103 @@
                 <option value="2">⭐⭐ - Poor</option>
                 <option value="1">⭐ - Terrible</option>
             </select>
-
+    
             <label for="review">Your Review:</label>
             <textarea id="review" name="review" rows="4" required></textarea>
-
+    
             <button type="submit">Submit Review</button>
         </form>
+    
+        <!-- Customer Reviews Section (Now Below) -->
+        <h2>Customer Reviews</h2>
+        <div class="reviews-container">
+            <div class="review">
+                <img src="../assets/reviewer1.png" alt="Reviewer 1" class="reviewer-photo">
+                <div class="review-text">
+                    <h3>John Doe</h3>
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                    <p>"Great product! The quality exceeded my expectations. Highly recommend."</p>
+                </div>
+            </div>
+    
+            <div class="review">
+                <img src="../assets/reviewer1.png" alt="Reviewer 2" class="reviewer-photo">
+                <div class="review-text">
+                    <h3>Jane Smith</h3>
+                    <p class="rating">⭐⭐⭐⭐</p>
+                    <p>"Solid performance. The features are great, but I wish it had more customization options."</p>
+                </div>
+            </div>
+    
+            <div class="review">
+                <img src="../assets/reviewer1.png" alt="Reviewer 3" class="reviewer-photo">
+                <div class="review-text">
+                    <h3>Michael Lee</h3>
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                    <p>"Fantastic device! Easy setup and works flawlessly. Definitely a 5-star product."</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <div class="hidden-reviews">
+        <div class="review">
+            <img src="../assets/reviewer1.png" alt="Reviewer 4" class="reviewer-photo">
+            <div class="review-text">
+                <h3>Sarah Kim</h3>
+                <p class="rating">⭐⭐⭐⭐</p>
+                <p>"Good camera, but the setup could be easier. Overall, a great purchase."</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <img src="../assets/reviewer1.png" alt="Reviewer 4" class="reviewer-photo">
+            <div class="review-text">
+                <h3>Mathew Sy</h3>
+                <p class="rating">⭐⭐⭐⭐</p>
+                <p>"A great purchase."</p>
+            </div>
+        </div>
+        
+        
+
+        <div class="review">
+            <img src="../assets/reviewer1.png" alt="Reviewer 5" class="reviewer-photo">
+            <div class="review-text">
+                <h3>David Tran</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p>"Exceeded my expectations! Excellent quality for the price."</p>
+            </div>
+        </div>
+
+        <!-- Add more reviews as needed -->
+    </div>
+</div>
+
+<!-- See All Reviews Button -->
+<button id="see-all-reviews" onclick="toggleReviews()">See All Reviews</button>
+
+<!-- JavaScript to toggle reviews -->
+<script>
+    function toggleReviews() {
+        const hiddenReviews = document.querySelector('.hidden-reviews');
+        const seeAllButton = document.getElementById('see-all-reviews');
+
+        if (hiddenReviews.style.display === 'none' || hiddenReviews.style.display === '') {
+            hiddenReviews.style.display = 'block';
+            seeAllButton.textContent = 'Show Less Reviews';
+        } else {
+            hiddenReviews.style.display = 'none';
+            seeAllButton.textContent = 'See All Reviews';
+        }
+    }
+
+    // Initially hide the extra reviews
+    document.querySelector('.hidden-reviews').style.display = 'none';
+</script>
+    
+    
+    
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-left">
