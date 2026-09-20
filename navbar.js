@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li class="dropdown">
                     <a href="index.html">HOME ▼</a>
                     <div class="dropdown-content">
+                        <a href="index.html">Home</a>
                         <a href="about.html">About Us</a>
                         <a href="partners.html">Partners</a>
                         <a href="dealer-form.html">Dealer Form</a>
